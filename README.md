@@ -5,11 +5,11 @@ This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. Whe
 
 # Components Used: 
 
-  Arduino Board (Uno, Mega, Nano, etc.)
-  Adafruit NeoPixels (or compatible WS2812 LEDs)
-  High-value resistor (e.g., 1MΩ - 10MΩ)
-  Conductive materials (foil, wires, etc.)
-  Alligator clips (to connect the conductive materials)
+- Arduino Board (Uno, Mega, Nano, etc.)
+- Adafruit NeoPixels (or compatible WS2812 LEDs)
+- High-value resistor (e.g., 1MΩ - 10MΩ)
+- Conductive materials (foil, wires, etc.)
+- Alligator clips (to connect the conductive materials)
 
 # Wiring Diagram:
 
