@@ -1,14 +1,15 @@
-# demoNights
+# Demo Nights #3
 # Capacitive Touch Sensor with NeoPixels
 
 This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. When conductive materials connected to the capacitive sensor pins are touched, the NeoPixels change color accordingly.
 
 # Components Used: 
 
-- Arduino Board (Uno, Mega, Nano, etc.)
+- Flora Board
 - Adafruit NeoPixels (or compatible WS2812 LEDs)
 - High-value resistor (e.g., 1MΩ - 10MΩ)
-- Conductive materials (foil, wires, etc.)
+- Conductive thread
+- Conductive fabric
 - Alligator clips (to connect the conductive materials)
 
 # Wiring Diagram:
@@ -24,9 +25,9 @@ This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. Whe
 
   Install the Required Libraries:
     Install the Adafruit NeoPixel library from the Arduino Library Manager.
-    Install the CapacitiveSensor library.
+    Install the CapacitiveSensor library by Paul Badger from the Arduino Library Manager.
 
-  Upload the Code
+  Upload the Code:
     Copy and paste the provided Arduino sketch into the Arduino IDE.
     Select the correct board and COM port(USB).
     Upload the code to your Arduino.
@@ -42,7 +43,7 @@ This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. Whe
 
 # Code Explanation
 
-  Capacitive Sensors Setup: Uses a high-value resistor to measure capacitance changes.
+  Capacitive Sensors Setup: A high-value resistor is used to measure capacitance changes.
   NeoPixel Configuration: Uses the Adafruit_NeoPixel library for LED control.
   Loop Function: 
     Reads the touch sensor values.
@@ -65,7 +66,7 @@ This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. Whe
 
   Add more touch sensors for additional interactions.
   Implement dynamic brightness control.
-  Use an OLED display to show sensor values in real time.
+  Use an OLED display to show sensor values in real-time.
 
 # License
 This project is open-source. Feel free to modify and improve it!
