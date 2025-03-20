@@ -5,6 +5,7 @@ This Arduino project uses capacitive touch sensors to control NeoPixel LEDs. Whe
 
 # Components Used: 
 
+
 - Flora Board
 - Adafruit NeoPixels (or compatible WS2812 LEDs)
 - High-value resistor (e.g., 1MΩ - 10MΩ)
