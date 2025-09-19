@@ -1,28 +1,55 @@
-**demoNights**
+# demoNights (NAT)
 
-This repository hosts the code and resources for Demo Nights, a recurring event series by NAT.
+> Hands-on demo events by **NAT** — from hardware hacks to software experiments. Build it. Show it. Inspire others.
+> 
+---
 
-Each Demo Night features hands-on projects built with emerging technologies — ranging from hardware demos to software experiments. This repo serves as a central location where all code and instructions for each demo can be found.
+## What is this?
 
-**How to Use This Repo**
+This repository hosts the code and resources for **Demo Nights**, a recurring event series by **NAT**.
 
-- Each Demo Night project is organized in its own folder.
-- Check the README inside each project folder for details on setup, usage, and requirements for that specific demo.
+Each Demo Night features hands-on projects built with emerging technologies — ranging from hardware demos to software experiments. The repo serves as a **central location** where all code and instructions for each demo can be found.
 
-**NAT**
+---
 
-NAT (previously NeurAlbertaTech), also known as the Network for Applied Technology, is Alberta’s largest neurotechnology innovator / education network. 
+## How to use the repo
 
-It supports the education, development, and community around neurotechnologies (brain-computer interfaces, biosensors, etc.). 
+- Each Demo Night project is organized in its **own folder**.
+- Check the **README inside each project folder** for setup, usage, and requirements for that specific demo.
 
-**What are Demo Nights?**
+Start here → [`./demoNights/`](./demoNights/)
 
-Demo Nights are events organized by NAT where members or participants showcase small hands-on projects or demonstrations — often with emerging tech, sensors, bio-tech, wearables, etc.
+---
 
-They are meant to be learning/sharing events: you build something, show it, explain it, get feedback, inspire others.
+## What are Demo Nights?
 
-They often involve making new interactive hardware, exploring sensors, etc.
+**Demo Nights** are events organized by **NAT** where members or participants showcase small hands-on projects or demonstrations — often with emerging tech, sensors, bio-tech, wearables, etc.
+
+They’re meant to be learning/sharing events: you build something, show it, explain it, get feedback, and inspire others.  
+They often involve making new interactive hardware, exploring sensors, and more.
+
+---
+
+## About NAT
+
+**NAT (previously NeurAlbertaTech)** — the **Network for Applied Technology** — is Alberta’s largest neurotechnology innovator / education network.
+
+It supports the education, development, and community around neurotechnologies (brain-computer interfaces, biosensors, etc.).
+
+
+---
+
+## Contributing
+
+- Open an Issue with your idea (label: `proposal`). And we will reach out to you!
+
+
+---
+
+## License
 
 **MIT License**
 
-Copyright (c) 2025 NAT (NeurAlbertaTech)
+Copyright (c) 2025 **NAT (NeurAlbertaTech)**
+
+
