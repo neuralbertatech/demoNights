@@ -36,7 +36,7 @@ void loop() {
     int signal = EMGFilter(sensor_value);
 
     int envelop = getEnvelop(abs(signal));
-p
+    
     // Adjust '20' higher if LEDs max out too easily, or lower if they barely light up
     int led_bar_level = map(envelop, 0, 20, 0, total_leds); 
     led_bar_level = constrain(led_bar_level, 0, total_leds);
