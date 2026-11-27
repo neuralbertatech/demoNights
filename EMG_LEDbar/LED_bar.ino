@@ -9,8 +9,6 @@
 int circular_buffer[BUFFER_SIZE];
 int data_index, sum;
 
-// LED pins matching your Tinkercad layout (Green -> Yellow -> Red: pins 10 down to 2)
-// Swap to {2, 3, 4, 5, 6, 7, 8, 9, 10} if you want it to fill in the opposite direction
 int led_bar[] = {10, 9, 8, 7, 6, 5, 4, 3, 2};
 int total_leds = sizeof(led_bar) / sizeof(led_bar[0]);
 
@@ -23,7 +21,6 @@ void setup() {
 }
 
 void loop() {
-  // Calculate elapsed time for fixed 500 Hz sampling
   static unsigned long past = 0;
   unsigned long present = micros();
   unsigned long interval = present - past;
@@ -35,19 +32,15 @@ void loop() {
   if (timer < 0) {
     timer += 1000000 / SAMPLE_RATE;
 
-    // 1. Read raw EMG signal and apply 74.5 - 149.5 Hz bandpass filter
     int sensor_value = analogRead(INPUT_PIN);
     int signal = EMGFilter(sensor_value);
 
-    // 2. Get signal envelope (smoothed amplitude)
     int envelop = getEnvelop(abs(signal));
-
-    // 3. Map envelope to the number of LEDs to light up
-    // Adjust '100' higher if LEDs max out too easily, or lower if they barely light up
+p
+    // Adjust '20' higher if LEDs max out too easily, or lower if they barely light up
     int led_bar_level = map(envelop, 0, 20, 0, total_leds); 
     led_bar_level = constrain(led_bar_level, 0, total_leds);
 
-    // 4. Update LED bar
     for (int i = 0; i < total_leds; i++) {
       if (i < led_bar_level) {
         digitalWrite(led_bar[i], HIGH);
@@ -56,14 +49,12 @@ void loop() {
       }
     }
 
-    // Optional: view signal & envelope in Arduino Serial Plotter
     Serial.print(signal);
     Serial.print(",");
     Serial.println(envelop);
   }
 }
 
-// Moving-average envelope detector
 int getEnvelop(int abs_emg) {
   sum -= circular_buffer[data_index];
   sum += abs_emg;
@@ -72,7 +63,6 @@ int getEnvelop(int abs_emg) {
   return (sum / BUFFER_SIZE) * 2;
 }
 
-// Band-Pass Butterworth IIR digital filter (74.5 - 149.5 Hz at 500 Hz sample rate)
 float EMGFilter(float input) {
   float output = input;
   {
